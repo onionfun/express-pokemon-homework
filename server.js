@@ -14,6 +14,10 @@ app.get('/pokemon', (req, res)=>{
     res.send(Pokemon)
 })
 
+app.get('/pokemon/:id', (req, res)=>{
+    res.render('index.ejs', {pokemon: Pokemon})
+})
+
 
 
 
