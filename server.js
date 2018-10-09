@@ -5,18 +5,21 @@ const Pokemon = require('./modals/pokemon');
 // app.get('/pokemon/:id/edit', (req, res)=>{
 //     res.send('edit.ejs')
 // })
-
-// app.get('/pokemon/:id', (req, res)=>{
-//     res.send('show.ejs')
-// })
+app.get('/pokemon/index', (req, res)=>{
+    res.render('index.ejs', {pokemon: Pokemon})
+})
 
 app.get('/pokemon', (req, res)=>{
     res.send(Pokemon)
 })
 
 app.get('/pokemon/:id', (req, res)=>{
-    res.render('index.ejs', {pokemon: Pokemon})
+    res.render('show.ejs', {pokemon: Pokemon[req.params.id]})
 })
+
+
+
+
 
 
 

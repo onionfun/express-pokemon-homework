@@ -2,9 +2,18 @@
 <html>
 <head>
   <title></title>
+  <style>
+  h1 {color:red;}
+  ul {color:blue;}
+  </style>
 </head>
 <body>
   <h1>Poke show Page</h1>
 
+<% for (let key in pokemon) { %>
+    <%= pokemon[key] %>
+    
+  <% } %>
+</ul>
 </body>
 </html>
