@@ -2,14 +2,15 @@
 <html>
 <head>
   <title></title>
+  <style>
+  h1 {color:red;}
+  ul {color:blue;}
+  </style>
 </head>
 <body>
   <h1>Poke index Page</h1>
 
-  <%=pokemon.name %>
-
-  <%= pokemon %>
-The Pokemon
+  
 <ul class="pokemon">
 <!-- we want to execute javascript with a for loop -->
 
@@ -17,6 +18,6 @@ The Pokemon
     <li><%= pokemon[i].name %></li>
     
   <% } %>
-
+</ul>
 </body>
 </html>
