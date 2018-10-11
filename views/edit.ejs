@@ -5,7 +5,7 @@
 </head>
 <body>
   <h1>Poke edit Page</h1>
-  <form method="POST" action="/pokemon/<%=id%>/edit/?_method=PUT">
+  <form method="POST" action="/pokemon/<%=id%>?_method=PUT">
 
   <!--  NOTE: the form is pre-populated with values for the server-->
   Name: <input type="text" name="name" value="<%=pokemon.name%>"/><br/>

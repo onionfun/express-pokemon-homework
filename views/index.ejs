@@ -16,9 +16,12 @@
 <!-- we want to execute javascript with a for loop -->
 
 <% for (let i = 0; i < pokemon.length; i++) { %>
-    <li><a href="<%= [i] %>"><%= pokemon[i].name %></li>
+    <li><a href="/pokemon/<%= [i] %>/show"><%= pokemon[i].name %></li>
   <% } %>
+
 </ul>
+
+
 
 </body>
 </html>
