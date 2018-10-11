@@ -5,7 +5,7 @@
   <style>
   h1 {color:red;}
   ul {color:blue;}
-  body {background-image: url("http://images6.fanpop.com/image/photos/40000000/Pokemon-Background-Designs40-earn-gold-here-40015982-1920-1080.jpg")}
+  body {background-image: url("https://static.squarespace.com/static/51d3a8f6e4b085686832d41d/51df43d9e4b0c350225e25b9/51df43dce4b0c350225e3a27/1301107705013/1000w/wallpaper-339945.jpg")}
   </style>
 </head>
 <body>
@@ -13,7 +13,9 @@
 
 <% for (let key in pokemon) { %>
     <%= pokemon[key] %>
-    
+    <form action="/pokemon/<%=id%>/edit" method="POST">
+    <input type="submit" value="edit">
+    </form> 
   <% } %>
 </ul>
 </body>
